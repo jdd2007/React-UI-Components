@@ -20,12 +20,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <style>
+    </style>
   </head>
   <body>
+    <div id="root"></div>
+
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +44,33 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+
+
+
   </body>
+  <script type="text/babel"> 
+    const parent = document.getElementById("root");
+    const myH1 = document.createElement("h1");
+    myH1.innerText = "Hello World, PLEASE SHOW ME"
+
+    const MyReactElement1 = React.createElement(
+      "div", { className: "parent-element", id: "element-id"},
+      React.createElement("h1", {className: "my-name"}, "My Freaking Element")
+      );
+    
+      const App = (props) => {
+        return (
+          <div className="parent-element" id="element-id">
+              <HeaderElement />
+          </div>
+        )
+      }
+
+      const HeaderElement = (props) => {
+        return <h1 className="my-name">Lambda School</h1>
+      }
+
+    ReactDOM.render(<App />, parent)
+  </script>
 </html>
