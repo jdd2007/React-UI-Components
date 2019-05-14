@@ -20,19 +20,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     <style>
     </style>
   </head>
   <body>
     <div id="root"></div>
 
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+    <noscript>You need to enable JavaScript to run this app</noscript>
 
     <!--
       This HTML file is a template.
@@ -45,12 +39,14 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-
+    <script src="../src/index.js"></script>
 
 
   </body>
   <script type="text/babel"> 
-    const parent = document.getElementById("root");
+ /*   const parent = document.getElementById("root");
+ 
+ 
     const myH1 = document.createElement("h1");
     myH1.innerText = "Hello World, PLEASE SHOW ME"
 
@@ -63,14 +59,42 @@
         return (
           <div className="parent-element" id="element-id">
               <HeaderElement />
+              <ImageThumbnail />
+              <HeaderTitle />
           </div>
         )
       }
 
       const HeaderElement = (props) => {
-        return <h1 className="my-name">Lambda School</h1>
+        return <h1 className="my-name">Header Element</h1>
+      };
+
+      const ImageThumbnail = (props) => {
+        return <h1 className="my-name">Image Thumbnail</h1>
+      };
+
+      const HeaderContent = (props) => {
+        return <h1 className="my-name">Header Content</h1>
+      };
+
+      const CardContainer = (props) => {
+        return (
+          <div className="parent-element" id="element-id">
+              <CardBanner />
+              <CardContent />
+          </div>
+        )
       }
 
-    ReactDOM.render(<App />, parent)
+      const CardBanner = (props) => {
+        return <h1 className="my-name">Header Element</h1>
+      };
+
+      const CardContent = (props) => {
+        return <h1 className="my-name">Image Thumbnail</h1>
+      };
+
+
+    ReactDOM.render(<App />, parent)*/
   </script>
 </html>
