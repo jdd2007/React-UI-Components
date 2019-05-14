@@ -1,1 +1,78 @@
 /* All styles for your Card Components live here */
+
+.card-banner {
+    display: flex;
+    flex-direction: column;
+};
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-line {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.top-h1 {
+    font-weight: bold;
+}
+
+.twitter-and-date {
+    color: #9ea0a2;
+    margin-left: 10px;
+};
+
+.top-info {
+    margin-bottom: 40px;
+    color: #545759;
+}
+
+.react-img-div {
+    margin-top: 20px;
+    height: 273.42px;
+    width: 530px;
+}
+
+.react-img {
+    object-fit: fill;
+}
+
+.bottom-div {
+    box-shadow: #e7edf1;
+    border-right: 1px solid #e7edf1;
+    border-bottom: 1px solid #e7edf1;
+    border-left: 1px solid #e7edf1;
+}
+
+.bottom-command {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.bottom-info {
+    margin: 10px;
+}
+
+.bottom-link a {
+    margin: 10px 10px 25px 10px;
+    color: #9ea0a2;
+    text-decoration: none;
+}
+
+.footer-img-div {
+    width: 300px;
+    margin-top: 20px;
+}
+
+/*
+.favicon-img {
+    width: 50%;
+}
+
+//<div className="card-banner">
+//<div className="card-header">
+    <div className="top-line">
+    */
