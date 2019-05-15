@@ -1,0 +1,17 @@
+
+.action-button {
+    height: 100px;
+    width: 120px;
+    border: 2px solid #979797;
+    font-size: 3rem;
+    color: white;
+    background-color: #a02320;
+}
+
+.number-button {
+    height: 100px;
+    width: 120px;
+    border: 2px solid #979797;
+    font-size: 3rem;
+    background-color: white;
+}
