@@ -1,0 +1,17 @@
+
+.calcContainer {
+    height: 590px;
+    width: 480px;
+    border: 2px solid #979797;
+    margin: 50px 0 100px 200px;
+    display: flex;
+    flex-wrap: wrap;
+};
+
+#clear-id {
+    width: 200px;
+};
+
+#zero-id {
+    width: 200px;
+};
